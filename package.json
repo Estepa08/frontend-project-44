@@ -14,5 +14,22 @@
   "type": "module",
   "dependencies": {
     "readline-sync": "^1.4.10"
-  }
+  },
+  "devDependencies": {
+    "@eslint/create-config": "^1.9.0",
+    "@eslint/js": "^9.29.0",
+    "@stylistic/eslint-plugin": "^5.0.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0",
+    "jiti": "^2.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Estepa08/frontend-project-44.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Estepa08/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/Estepa08/frontend-project-44#readme"
 }

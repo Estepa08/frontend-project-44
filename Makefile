@@ -1,7 +1,5 @@
 install:	
-	@echo "Идёт установка..."
 	npm ci
-	@echo "Готово!"
 	
 .PHONY: install
 
@@ -10,3 +8,8 @@ brain-games:
 
 publish:
 	npm publish --dry-run
+
+lint:
+	npx eslint
+
+..PHONY: lint
