@@ -22,7 +22,7 @@ const finishGame = (isWinner, userName) => {
     : `Let's try again, ${userName}!`)
 }
 
-const brainEven = () => {
+export const brainEven = () => {
   const userName = askUserName()
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -50,5 +50,3 @@ const brainEven = () => {
 
   finishGame(true, userName)
 }
-
-export { brainEven }

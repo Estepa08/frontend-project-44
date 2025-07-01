@@ -4,28 +4,31 @@ import { askUserName } from '../src/cli.js'
 const ROUNDS_TO_WIN = 3
 const MIN_NUMBER = 1
 const MAX_NUMBER = 100
+const NUMBERS_COUNT = 2
+
+const operations = {
+  '+': (a, b) => a + b,
+  '-': (a, b) => a - b,
+  '*': (a, b) => a * b,
+}
 
 const getRandomOperator = () => {
-  const operators = ['+', '-', '*']
-  return operators[Math.floor(Math.random() * operators.length)]
+  const ops = Object.keys(operations)
+  const index = Math.floor(Math.random() * ops.length)
+  return ops[index]
 }
 
-const calculate = (num1, num2, operator) => {
-  switch (operator) {
-    case '+': return num1 + num2
-    case '-': return num1 - num2
-    case '*': return num1 * num2
-    default: throw new Error(`Unknown operator: ${operator}`)
-  }
-}
+const generateNumbers = count => (
+  Array.from({ length: count }, () =>
+    Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)) + MIN_NUMBER)
+)
 
 const generateQuestionAndAnswer = () => {
-  const num1 = Math.floor(Math.random() * MAX_NUMBER) + MIN_NUMBER
-  const num2 = Math.floor(Math.random() * MAX_NUMBER) + MIN_NUMBER
   const operator = getRandomOperator()
-  const correctAnswer = calculate(num1, num2, operator)
+  const numbers = generateNumbers(NUMBERS_COUNT)
+  const correctAnswer = numbers.reduce(operations[operator])
   return {
-    question: `${num1} ${operator} ${num2}`,
+    question: numbers.join(` ${operator} `),
     answer: String(correctAnswer),
   }
 }
@@ -36,7 +39,7 @@ const finishGame = (isWinner, userName) => {
     : `Let's try again, ${userName}!`)
 }
 
-const brainCalc = () => {
+export const brainCalc = () => {
   const userName = askUserName()
   console.log('What is the result of the expression?')
 
@@ -45,8 +48,8 @@ const brainCalc = () => {
   while (correctAnswers < ROUNDS_TO_WIN) {
     const { question, answer } = generateQuestionAndAnswer()
     console.log(`Question: ${question}`)
-
     const userInput = readlineSync.question('Your answer: ')
+
     if (userInput === answer) {
       console.log('Correct!')
       correctAnswers++
@@ -59,5 +62,3 @@ const brainCalc = () => {
 
   finishGame(true, userName)
 }
-
-export { brainCalc }
