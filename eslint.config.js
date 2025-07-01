@@ -1,12 +1,14 @@
-import stylistic from '@stylistic/eslint-plugin';
+// eslint.config.js
+import stylistic from '@stylistic/eslint-plugin'
 
 export default [
-  {
-    plugins: {
-      '@stylistic': stylistic,
-    },
-    rules: {
-      '@stylistic/indent': ['error', 2],
-    },
-  },
-];
+  stylistic.configs.customize({
+    // the following options are the default values
+    indent: 2,
+    quotes: 'single',
+    semi: false,
+    jsx: true,
+    // ...
+  }),
+  // ...your other config items
+]
