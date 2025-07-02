@@ -1,3 +1,12 @@
 #!/usr/bin/env node
-import { brainCalc } from '../src/calc-game.js'
-brainCalc()
+import { runGame } from '../src/index.js'
+import { askUserName } from '../src/cli.js'
+import { brainCalc } from '../src/games/calc-game.js'
+
+runGame(
+  askUserName,
+  brainCalc.generateQuestionAndAnswer,
+  null,
+  brainCalc.isCorrectAnswer,
+  brainCalc.intro,
+)

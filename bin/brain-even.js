@@ -1,3 +1,12 @@
 #!/usr/bin/env node
-import { brainEven } from '../src/even-game.js'
-brainEven()
+import { runGame } from '../src/index.js'
+import { askUserName } from '../src/cli.js'
+import { brainEven } from '../src/games/even-game.js'
+
+runGame(
+  askUserName,
+  brainEven.generateQuestionAndAnswer,
+  brainEven.validateAnswer,
+  brainEven.isCorrectAnswer,
+  brainEven.intro,
+)

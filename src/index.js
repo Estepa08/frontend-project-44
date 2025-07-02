@@ -7,9 +7,16 @@ export const finishGame = (isWinner, userName) => {
     ? `Congratulations, ${userName}!`
     : `Let's try again, ${userName}!`)
 }
-export const runGame = (askUserName, generateQuestionAndAnswer, validateAnswer, isCorrectAnswer) => {
+
+export const runGame = (
+  askUserName,
+  generateQuestionAndAnswer,
+  validateAnswer = null,
+  isCorrectAnswer,
+  introMessage,
+) => {
   const userName = askUserName()
-  console.log('Answer the following questions:')
+  console.log(introMessage)
 
   let correctAnswers = 0
 
