@@ -28,7 +28,7 @@ export const brainCalc = {
   generateQuestionAndAnswer: () => {
     const operator = getRandomOperator()
     const numbers = generateNumbers(NUMBERS_COUNT)
-    const correctAnswer = numbers.reduce(operations[operator])
+    const correctAnswer = operations[operator](numbers[0], numbers[1])
     return {
       question: numbers.join(` ${operator} `),
       answer: String(correctAnswer),

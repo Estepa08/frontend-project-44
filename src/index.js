@@ -11,9 +11,9 @@ export const finishGame = (isWinner, userName) => {
 export const runGame = (
   askUserName,
   generateQuestionAndAnswer,
-  validateAnswer = null,
   isCorrectAnswer,
   introMessage,
+  validateAnswer = null,
 ) => {
   const userName = askUserName()
   console.log(introMessage)
