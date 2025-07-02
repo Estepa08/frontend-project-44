@@ -5,6 +5,9 @@
 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=Estepa08_frontend-project-44)
 
-https://asciinema.org/a/Z5qpuIxz63YIT2gB1tzNalFof
 
-https://asciinema.org/a/iWpuq5egeknqrzrGFGWLnoC4L
+
+## 🎮 Демонстрация работы игр
+
+- **Brain Calc:** [Посмотреть демо](https://asciinema.org/a/Z5qpuIxz63YIT2gB1tzNalFof)
+- **Brain Even:** [Посмотреть демо](https://asciinema.org/a/iWpuq5egeknqrzrGFGWLnoC4L)
