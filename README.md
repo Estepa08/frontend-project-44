@@ -9,7 +9,8 @@
 
 ## 🎮 Демонстрация работы игр
 
-- **Brain Even:** [Посмотреть демо](https://asciinema.org/a/iWpuq5egeknqrzrGFGWLnoC4L)
-- **Brain Calc:** [Посмотреть демо](https://asciinema.org/a/Z5qpuIxz63YIT2gB1tzNalFof)
-- **Brain GCD:**  [Посмотреть демо](https://asciinema.org/a/LdaI3BXHd66G83hL2LxgWs3rX)
+- **Brain Even:**        [Посмотреть демо](https://asciinema.org/a/iWpuq5egeknqrzrGFGWLnoC4L)
+- **Brain Calc:**        [Посмотреть демо](https://asciinema.org/a/Z5qpuIxz63YIT2gB1tzNalFof)
+- **Brain GCD:**         [Посмотреть демо](https://asciinema.org/a/LdaI3BXHd66G83hL2LxgWs3rX)
+- **Brain Progression:** [Посмотреть демо](https://asciinema.org/a/w8cPz12EYKHekMKScHfnmop4B)
 
