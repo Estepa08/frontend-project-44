@@ -3,11 +3,8 @@ import readlineSync from 'readline-sync'
 export const ROUNDS_TO_WIN = 3
 
 export const finishGame = (isWinner, userName) => {
-  console.log(isWinner
-    ? `Congratulations, ${userName}!`
-    : `Let's try again, ${userName}!`)
+  console.log(isWinner ? `Congratulations, ${userName}!` : `Let's try again, ${userName}!`)
 }
-
 export const runGame = (
   askUserName,
   generateQuestionAndAnswer,

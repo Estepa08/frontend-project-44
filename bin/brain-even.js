@@ -6,7 +6,7 @@ import { brainEven } from '../src/games/even-game.js'
 runGame(
   askUserName,
   brainEven.generateQuestionAndAnswer,
-  brainEven.validateAnswer,
   brainEven.isCorrectAnswer,
   brainEven.intro,
+  brainEven.validateAnswer,
 )

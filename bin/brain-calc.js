@@ -7,6 +7,6 @@ runGame(
   askUserName,
   brainCalc.generateQuestionAndAnswer,
   null,
-  brainCalc.isCorrectAnswer,
   brainCalc.intro,
+  brainCalc.isCorrectAnswer,
 )
