@@ -6,7 +6,6 @@ import { brainCalc } from '../src/games/calc-game.js'
 runGame(
   askUserName,
   brainCalc.generateQuestionAndAnswer,
-  null,
-  brainCalc.intro,
   brainCalc.isCorrectAnswer,
+  brainCalc.intro,
 )

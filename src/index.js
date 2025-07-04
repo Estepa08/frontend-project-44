@@ -10,7 +10,6 @@ export const runGame = (
   generateQuestionAndAnswer,
   isCorrectAnswer,
   introMessage,
-  validateAnswer = null,
 ) => {
   const userName = askUserName()
   console.log(introMessage)
@@ -21,12 +20,6 @@ export const runGame = (
     const { question, answer } = generateQuestionAndAnswer()
     console.log(`Question: ${question}`)
     const userAnswer = readlineSync.question('Your answer: ')
-
-    if (validateAnswer && !validateAnswer(userAnswer)) {
-      console.log(`'${userAnswer}' is invalid input.`)
-      finishGame(false, userName)
-      return
-    }
 
     if (isCorrectAnswer(userAnswer, answer)) {
       console.log('Correct!')

@@ -7,11 +7,11 @@ const operations = {
   '-': (a, b) => a - b,
   '*': (a, b) => a * b,
 }
-// SonarQube: Math.random is safe here — used only for non-secure game logic
+
 const getRandomOperator = () => {
   const ops = Object.keys(operations)
 
-  const index = Math.floor(Math.random() * ops.length) // NOSONAR: non-cryptographic randomness is acceptable in game context
+  const index = Math.floor(Math.random() * ops.length)
   return ops[index]
 }
 
