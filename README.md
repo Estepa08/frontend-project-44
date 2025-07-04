@@ -13,4 +13,5 @@
 - **Brain Calc:**  [Посмотреть демо](https://asciinema.org/a/Z5qpuIxz63YIT2gB1tzNalFof)
 - **Brain GCD:**   [Посмотреть демо](https://asciinema.org/a/LdaI3BXHd66G83hL2LxgWs3rX)
 - **Brain Progg:** [Посмотреть демо](https://asciinema.org/a/w8cPz12EYKHekMKScHfnmop4B)
+- **Brain Prime:** [Посмотреть демо](https://asciinema.org/a/O92931krpexU3fVZSv6PWtkdy)
 
