@@ -38,20 +38,4 @@ cd frontend-project-44
 npm install
 npm link
 
-## После установки, игры можно запускать в терминале с помощью следующих команд:
-
-brain-games
-brain-even
-brain-calc
-brain-gcd
-brain-prime
-brain-progression
-
-## 🎮 Демонстрация работы игр
-
-- **Brain Even:**  [Посмотреть демо](https://asciinema.org/a/iWpuq5egeknqrzrGFGWLnoC4L)
-- **Brain Calc:**  [Посмотреть демо](https://asciinema.org/a/Z5qpuIxz63YIT2gB1tzNalFof)
-- **Brain GCD:**   [Посмотреть демо](https://asciinema.org/a/LdaI3BXHd66G83hL2LxgWs3rX)
-- **Brain Prog:** [Посмотреть демо](https://asciinema.org/a/w8cPz12EYKHekMKScHfnmop4B)
-- **Brain Prime:** [Посмотреть демо](https://asciinema.org/a/O92931krpexU3fVZSv6PWtkdy)
 
