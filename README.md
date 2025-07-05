@@ -38,7 +38,7 @@ cd frontend-project-44
 npm install
 npm link
 
-После установки, игры можно запускать в терминале с помощью следующих команд:
+## После установки, игры можно запускать в терминале с помощью следующих команд:
 
 brain-games
 brain-even
@@ -54,17 +54,4 @@ brain-progression
 - **Brain GCD:**   [Посмотреть демо](https://asciinema.org/a/LdaI3BXHd66G83hL2LxgWs3rX)
 - **Brain Prog:** [Посмотреть демо](https://asciinema.org/a/w8cPz12EYKHekMKScHfnmop4B)
 - **Brain Prime:** [Посмотреть демо](https://asciinema.org/a/O92931krpexU3fVZSv6PWtkdy)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
