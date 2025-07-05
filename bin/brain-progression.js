@@ -1,12 +1,4 @@
 #!/usr/bin/env node
-import { runGame } from '../src/index.js'
-import { askUserName } from '../src/cli.js'
-import { brainProgression } from '../src/games/progression-game.js'
+import { runGame, brainProgression } from '../src/index.js'
 
-runGame(
-  askUserName,
-  brainProgression.generateQuestionAndAnswer,
-  brainProgression.isCorrectAnswer,
-  brainProgression.intro,
-  brainProgression.validateAnswer,
-)
+runGame(brainProgression)

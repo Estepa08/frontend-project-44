@@ -16,7 +16,7 @@ export const brainPrime = {
     const number = Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)) + MIN_NUMBER
     const correctAnswer = isPrime(number) ? 'yes' : 'no'
     return {
-      question: String(number),
+      question: number.toString(),
       answer: correctAnswer,
     }
   },

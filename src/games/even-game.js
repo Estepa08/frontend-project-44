@@ -8,14 +8,14 @@ export const brainEven = {
 
   generateQuestionAndAnswer: () => {
     const number = Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)) + MIN_NUMBER
-    const correctAnswer = isEven(number) ? 'yes' : 'no'
+    const answer = isEven(number) ? 'yes' : 'no'
     return {
-      question: String(number),
-      answer: correctAnswer,
+      question: number.toString(),
+      answer,
     }
   },
 
-  validateAnswer: userAnswer => ['yes', 'no'].includes(userAnswer),
+  validateAnswer: userAnswer => userAnswer === 'yes' || userAnswer === 'no',
 
   isCorrectAnswer: (userAnswer, correctAnswer) => userAnswer === correctAnswer,
 }

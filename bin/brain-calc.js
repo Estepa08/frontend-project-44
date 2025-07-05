@@ -1,11 +1,4 @@
 #!/usr/bin/env node
-import { runGame } from '../src/index.js'
-import { askUserName } from '../src/cli.js'
-import { brainCalc } from '../src/games/calc-game.js'
+import { runGame, brainCalc } from '../src/index.js'
 
-runGame(
-  askUserName,
-  brainCalc.generateQuestionAndAnswer,
-  brainCalc.isCorrectAnswer,
-  brainCalc.intro,
-)
+runGame(brainCalc)
