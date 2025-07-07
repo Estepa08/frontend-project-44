@@ -1,10 +1,12 @@
+import { getRandomNumber } from '../utils.js'
+
 const MIN_NUMBER = 1
 const MAX_NUMBER = 100
 
 const generatePairNumbers = () => {
   const result = []
   for (let i = 0; i < 2; i++) {
-    result.push(Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)) + MIN_NUMBER)
+    result.push(getRandomNumber(MIN_NUMBER, MAX_NUMBER))
   }
   return result
 }

@@ -1,3 +1,5 @@
+import { getRandomNumber } from '../utils.js'
+
 const MIN_NUMBER = 1
 const MAX_NUMBER = 100
 const NUMBERS_COUNT = 2
@@ -16,7 +18,7 @@ const getRandomItem = (array) => {
 const generateNumbers = (count) => {
   const numbers = []
   for (let i = 0; i < count; i++) {
-    const num = Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)) + MIN_NUMBER
+    const num = getRandomNumber(MIN_NUMBER, MAX_NUMBER)
     numbers.push(num)
   }
   return numbers

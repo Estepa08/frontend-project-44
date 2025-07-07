@@ -1,3 +1,5 @@
+import { getRandomNumber } from '../utils.js'
+
 const MIN_NUMBER = 1
 const MAX_NUMBER = 100
 
@@ -13,7 +15,7 @@ export const brainPrime = {
   intro: 'Answer "yes" if given number is prime. Otherwise answer "no".',
 
   generateQuestionAndAnswer: () => {
-    const number = Math.floor(Math.random() * (MAX_NUMBER - MIN_NUMBER + 1)) + MIN_NUMBER
+    const number = Math.floor(getRandomNumber(MIN_NUMBER, MAX_NUMBER))
     const correctAnswer = isPrime(number) ? 'yes' : 'no'
     return {
       question: number.toString(),

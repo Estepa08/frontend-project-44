@@ -1,3 +1,5 @@
+import { getRandomNumber } from '../utils.js'
+
 const MIN_START = 1
 const MAX_START = 50
 const MIN_STEP = 1
@@ -17,9 +19,9 @@ export const brainProgression = {
   intro: 'What number is missing in the progression?',
 
   generateQuestionAndAnswer: () => {
-    const start = Math.floor(Math.random() * (MAX_START - MIN_START + 1)) + MIN_START
-    const step = Math.floor(Math.random() * (MAX_STEP - MIN_STEP + 1)) + MIN_STEP
-    const length = Math.floor(Math.random() * (MAX_LENGTH - MIN_LENGTH + 1)) + MIN_LENGTH
+    const start = getRandomNumber(MIN_START, MAX_START)
+    const step = getRandomNumber(MIN_STEP, MAX_STEP)
+    const length = getRandomNumber(MIN_LENGTH, MAX_LENGTH)
 
     const progression = generateProgression(start, step, length)
     const hiddenIndex = Math.floor(Math.random() * progression.length)
